@@ -7,8 +7,12 @@
               android:name="net.davidcrotty.navigationaarc.FeedFragment"
               android:label="Feed"
               tools:layout="@layout/fragment_feed">
-        <action android:id="@+id/feed"
-                app:destination="@id/login"/>
+        <action android:id="@+id/feed_action"
+                app:destination="@id/upload_fragment"/>
     </fragment>
-    <fragment android:id="@+id/login"/>
+    <fragment android:id="@+id/upload_fragment"
+              android:name="net.davidcrotty.navigationaarc.UploadFragment"
+              tools:layout="@layout/fragment_upload">
+
+    </fragment>
 </navigation>
